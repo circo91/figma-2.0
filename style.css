@@ -1,0 +1,400 @@
+body {
+  font-family: Lexend Deca;
+  margin: auto 0;
+}
+
+/* oscylowanie div-ów */
+.first-box,
+.third-box,
+.fourth-box {
+  padding: 20px 0px 60px 30px;
+}
+
+.first-box,
+.fourth-box,
+.button-black,
+.button-black-form {
+  background-color: #222426;
+}
+.first-box {
+  color: white;
+}
+
+.second-box {
+  background-color: #f64746;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 40px 30px 30px;
+}
+.third-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* ""toolbar czyli na samej górze strony lista */
+/* id sa do hamburger - rozwijanego menu */
+#hamnav {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+#hamnav label,
+#hamburger {
+  display: none;
+}
+
+.toolbar {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact {
+  display: none;
+  font-family: gilroy;
+  font-size: 16px;
+}
+
+.icon > img {
+  width: 50%;
+}
+.div-logo {
+  display: inline-block;
+  width: 20%;
+  height: 20%;
+}
+.logo {
+  width: 100%;
+  height: 100%;
+}
+
+div > a,
+h4 > a {
+  color: white;
+  text-decoration: none;
+}
+
+h3 > a {
+  color: black;
+  text-decoration: none;
+}
+
+.start-academy {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0px 30px 0;
+  width: 60%;
+}
+
+.sign {
+  width: 10%;
+  height: 10%;
+  padding-bottom: 2%;
+}
+
+.academy {
+  width: 10%;
+  height: 10%;
+}
+
+/* div z tekstem opisu kiedy zaczyna się kurs */
+.preview {
+  width: 50%;
+}
+
+.text-image {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2%;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 56px;
+}
+
+.code {
+  font-family: Space Mono;
+}
+.text-school {
+  font-size: 24px;
+  letter-spacing: -0.5px;
+}
+
+.button {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button-white,
+.button-black {
+  width: 50%;
+  height: 4em;
+  font-family: lexend deca;
+  font-size: 18px;
+  font-weight: 900;
+  border-radius: 0;
+  border-style: solid;
+  border-color: white;
+}
+.button-black {
+  color: white;
+  border-width: 3px;
+}
+/* div ze zdjeciami ;/ */
+
+/* div 2 ze strzałką */
+.arrow-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.come {
+  font-size: 106px;
+  width: 33%;
+  margin: 0px;
+}
+
+.come-p {
+  font-size: 24px;
+  width: 30%;
+}
+
+.come-a {
+  font-size: 32px;
+}
+.arrow {
+  width: 20%;
+  height: 20%;
+}
+
+/* 3 div formularz */
+.decision {
+  width: 50%;
+}
+
+.form-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+
+form {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-name {
+  display: flex;
+  justify-content: space-between;
+}
+.form-email,
+.block-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 900;
+}
+label > span {
+  color: red;
+}
+
+input,
+select {
+  box-sizing: border-box;
+  border-radius: 0;
+  border-color: #222426;
+  border-style: solid;
+  border-width: 2px;
+  height: 40px;
+}
+
+.block-input {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.button-black-form {
+  color: white;
+  font-size: 24px;
+  font-weight: 900;
+  height: 78px;
+}
+
+/* 4 div z opisem co zaiera kurs */
+.fourth-box {
+  color: white;
+}
+
+.line-white {
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  margin-bottom: 1.5em;
+}
+
+.text-learning {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+li {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+li > p {
+  font-weight: 300;
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    box-sizing: border-box;
+  }
+  .preview,
+  .second-box {
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  .first-box {
+    padding: 0;
+  }
+
+  .text-image {
+    flex-direction: column;
+  }
+
+  .start-academy,
+  .third-box,
+  .fourth-box {
+    display: none;
+  }
+  .preview {
+    width: 100%;
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 44px;
+  }
+
+  .text-school {
+    font-size: 18px;
+  }
+  .button {
+    height: 120px;
+    margin: 40px 0;
+    flex-direction: column;
+  }
+  .button-black,
+  .button-white {
+    width: 100%;
+    height: 3em;
+    font-size: 16px;
+  }
+
+  .eye,
+  .image-eye {
+    width: 100vw;
+    margin-top: 30px;
+  }
+
+  .come {
+    font-size: 64px;
+    width: auto;
+  }
+
+  .arrow-div {
+    flex-direction: column;
+  }
+  .come-p,
+  .arrow {
+    width: 100%;
+  }
+  .come-a {
+    font-size: 18px;
+  }
+  .arrow-div > div {
+    width: 100%;
+  }
+
+  .third-box {
+    display: none;
+  }
+
+  /* hamburger */
+
+  .toolbar a {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    font-family: gilroy;
+  }
+
+  .div-logo {
+    display: inline-block;
+    width: 35%;
+    padding: 10px;
+  }
+
+  #hamnav {
+    width: 100%;
+  }
+
+  #hamnav label {
+    display: inline-block;
+    color: white;
+    font-style: normal;
+    padding: 10px;
+  }
+
+  .toolbar {
+    display: none;
+  }
+
+  #hamnav input:checked ~ .toolbar {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    padding-right: 10px;
+  }
+
+  /* #hamnav input:checked ~ .toolbar > a {
+    text-align: right;
+  }
+
+  #hamnav input:checked ~ .div-logo > img {
+    display: none;
+  } */
+  .contact {
+    display: flex;
+    flex-direction: column;
+    font-weight: 800;
+  }
+}
